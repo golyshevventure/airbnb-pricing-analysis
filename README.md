@@ -24,7 +24,7 @@ The idea was to build something that actually answers business questions: How se
 
 **Seasonality** — monthly price and occupancy trends built from calendar data, not just listing snapshots.
 
-## Key findings
+## Some findings
 
 - **Nashville** has the highest median price ($198/night) and the strongest seasonality — price swings of ±$120 depending on month. Music City lives up to the hype.
 - **NYC** dominates in volume (42K listings) and occupancy (62%), but ratings are the lowest across all five cities. Oversupplied market, race to the bottom on quality.
