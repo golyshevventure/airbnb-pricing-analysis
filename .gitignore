@@ -1,0 +1,35 @@
+# Environment
+venv/
+env/
+.venv/
+
+# Data (large files)
+data/raw/*.csv
+data/processed/*.csv
+
+# Logs
+logs/
+*.log
+
+# Environment variables
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Streamlit
+.streamlit/
+
+# Trash
+insights.txt
+data/raw/**/*.csv
