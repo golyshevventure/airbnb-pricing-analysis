@@ -38,6 +38,17 @@ The idea was to build something that actually answers business questions: How se
 - Period: March 2023 — May 2024
 - Cities: Austin, Dallas, Nashville, New York City, Seattle
 - 77,494 listings + 28,429,579 calendar records
+- 
+## Quick start
+
+Don't want to download 1.5GB of raw files? Grab the processed datasets and run the dashboard in 30 seconds:
+
+- [Download processed data](https://drive.google.com/drive/folders/1PoZLsA9HQ36uFt9eC7JBhpPyUJCrF-Tr?usp=sharing) (Google Drive, ~11 MB)
+- Place `airbnb_cleaned.csv` and `calendar_monthly_agg.csv` in `data/processed/`
+- `pip install -r requirements.txt`
+- `streamlit run app.py`
+
+Done.
 
 ## How to reproduce this project
 
