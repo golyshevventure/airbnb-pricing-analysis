@@ -1,6 +1,6 @@
 # Airbnb Pricing Analysis across US Cities
 
-Interactive dashboard for analyzing Airbnb pricing patterns across five major US cities. Built from raw CSVs to a deployed Streamlit app — shows the full data pipeline, not just pretty charts.
+Interactive dashboard for analyzing Airbnb pricing patterns across five major US cities. Built from raw CSVs to a deployed Streamlit app — shows the full data pipeline.
 
 **Live demo:** [link after Streamlit Cloud deployment]
 
@@ -73,5 +73,6 @@ Opens at `http://localhost:8501`.
 ```
 
 ## Contact
-
-Questions or feedback: golyshevventure@gmail.com
+Nikita Golyshev
+Financial & Data analyst
+E-mail: golyshevventure@gmail.com
