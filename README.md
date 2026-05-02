@@ -10,7 +10,7 @@ Interactive dashboard for analyzing Airbnb pricing patterns across five major US
 
 I took Inside Airbnb data for Austin, Dallas, Nashville, NYC, and Seattle. Total of 77K+ listings and 28M calendar records. Went through the whole cycle: raw data → cleaning → EDA → predictive model → seasonality analysis → interactive dashboard.
 
-The idea was to build something that actually answers business questions: where should you list to charge more? What drives pricing? How seasonal is each market? What separates hobbyist hosts from professionals?
+The idea was to build something that actually answers business questions: How seasonal is each market? What separates hobbyist hosts from professionals?
 
 ## What's inside the dashboard
 
