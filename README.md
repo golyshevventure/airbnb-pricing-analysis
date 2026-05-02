@@ -2,7 +2,7 @@
 
 Interactive dashboard for analyzing Airbnb pricing patterns across five major US cities. Built from raw CSVs to a deployed Streamlit app — shows the full data pipeline.
 
-**Live demo:** [link after Streamlit Cloud deployment]
+**Live demo:**(https://airbnb-pricing-analysis--NikitaGolyshiev.replit.app)
 
 ---
 
