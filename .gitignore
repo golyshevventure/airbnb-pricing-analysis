@@ -33,3 +33,4 @@ Thumbs.db
 # Trash
 insights.txt
 data/raw/**/*.csv
+data/processed/airbnb_raw_combined.csv
