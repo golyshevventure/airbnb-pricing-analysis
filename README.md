@@ -139,4 +139,5 @@ Opens at `http://localhost:8501`.
 
 ## Contact
 Nikita Golyshev, financial and data analyst
+
 E-mail: golyshevventure@gmail.com
