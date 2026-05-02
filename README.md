@@ -1,8 +1,8 @@
 # Airbnb Pricing Analysis across US Cities
 
-Interactive dashboard for analyzing Airbnb pricing patterns across five major US cities. Built from raw CSVs to a deployed Streamlit app — shows the full data pipeline.
+Interactive dashboard for analyzing Airbnb pricing patterns across five major US cities. Built from raw CSVs to a deployed Streamlit app — shows the full data pipeline, not just pretty charts.
 
-**Live demo:**(https://airbnb-pricing-analysis--NikitaGolyshiev.replit.app)
+**Live demo:** [https://airbnb-pricing-analysis--NikitaGolyshiev.replit.app](https://airbnb-pricing-analysis--NikitaGolyshiev.replit.app)
 
 ---
 
@@ -39,10 +39,75 @@ The idea was to build something that actually answers business questions: where 
 - Cities: Austin, Dallas, Nashville, New York City, Seattle
 - 77,494 listings + 28,429,579 calendar records
 
-## Run it locally
+## How to reproduce this project
+
+Since raw CSV files exceed GitHub's 100MB limit, they are not included in this repo. Here's how to get the data and run everything:
+
+### 1. Download the data
+
+Get the datasets from **Inside Airbnb** or **Kaggle**:
+
+- [Inside Airbnb - Get the Data](http://insideairbnb.com/get-the-data.html)
+- Or search Kaggle for "Inside Airbnb" — there are compiled datasets for all cities
+
+You need two file types per city:
+- `listings.csv` — property listings with prices, ratings, locations
+- `calendar.csv` — daily availability and pricing records
+
+### 2. Create the folder structure
+
+Place files like this inside the project folder:
+
+```
+data/
+├── raw/
+│   ├── Austin/
+│   │   ├── listings_austin.csv
+│   │   └── calendar_austin.csv
+│   ├── Dallas/
+│   │   ├── listings_dallas.csv
+│   │   └── calendar_dallas.csv
+│   ├── Nashville/
+│   │   ├── listings_nashville.csv
+│   │   └── calendar_nashville.csv
+│   ├── New York City/
+│   │   ├── listings_newyork.csv
+│   │   └── calendar_newyork.csv
+│   └── Seattle/
+│       ├── listings_seattle.csv
+│       └── calendar_seattle.csv
+└── processed/
+    └── (will be created by scripts)
+```
+
+### 3. Run the pipeline
 
 ```bash
-git clone https://github.com/yourusername/airbnb-pricing-analysis.git
+# Step 1: Load and combine data
+python 01_data_loading.py
+
+# Step 2: Clean and engineer features
+python 02_data_cleaning.py
+
+# Step 3: Exploratory analysis + plots
+python 03_eda.py
+
+# Step 4: Predictive model, segmentation, maps
+python 04_advanced_analysis.py
+
+# Step 5: Seasonality from calendar data
+python 05_temporal_analysis.py
+
+# Step 6: Launch the dashboard
+streamlit run app.py
+```
+
+Scripts 01–05 generate processed datasets and save plots to `screenshots/`. The dashboard reads from `data/processed/`.
+
+## Run it locally (if you already have the data)
+
+```bash
+git clone https://github.com/golyshevventure/airbnb-pricing-analysis.git
 cd airbnb-pricing-analysis
 
 python -m venv venv
@@ -73,6 +138,5 @@ Opens at `http://localhost:8501`.
 ```
 
 ## Contact
-Nikita Golyshev
-Financial & Data analyst
+Nikita Golyshev, financial and data analyst
 E-mail: golyshevventure@gmail.com
